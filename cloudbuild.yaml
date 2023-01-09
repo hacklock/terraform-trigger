@@ -4,12 +4,7 @@ steps:
   name: 'hashicorp/terraform:1.0.0'
   entrypoint: 'sh'
   args: 
-   - '-c'
-      - |
-          terraform init \
-            -backend-config=bucket="a-backet-for-the-state-file" \
-            -backend-config=prefix="a-prefix-for-the-state-file" \
-            || exit 1
-
-          terraform apply -auto-approve \
-            || exit 1
+  - '-c'
+  - | 
+   
+    terraform apply -auto-approve
