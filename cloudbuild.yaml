@@ -13,6 +13,3 @@ steps:
 
           terraform apply -auto-approve \
             || exit 1
-   
-    terraform apply -auto-approve
- 
